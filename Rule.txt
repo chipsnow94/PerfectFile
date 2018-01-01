@@ -1,0 +1,16 @@
+Exercise 1:  Perfect file
+Write a console application to read data from a file to check as if the file is perfect or not. The file should contain the data as the information below:
+•	It should have one or many lines.
+•	Each line is formed up by ONLY numbers and the numbers are separated by spaces. 
+•	The file is considered as invalid if it contains the other characters, except numbers and spaces.
+•	A file is called PERFECT if every line meets the following criteria:
+o	The number of positive numbers and negative numbers on each line are the same 
+o	The Total of the numbers in each line equals to Zero (0)
+ 
+This is the example of a valid file
+1 2 15 6
+2 -2 4
+3 5 -1 -7
+The line #3 is the PERFECT line, however, the file is not perfect.
+
+Your task is to print out the screen the result: is a file perfect or not. Please use TDD methodology in development and make sure unit tests and integration tests are well-done.
