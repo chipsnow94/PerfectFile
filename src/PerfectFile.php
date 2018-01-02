@@ -8,12 +8,12 @@ class PerfectFile
     const PERFECT_NUMBER=0;
     public function is_Perfect_File($Path)
     {
-        $file_array = $this->readFile($Path);
+        $file_array = $this->read_File($Path);
         if ($this->is_Empty_File($file_array)) {
             return self::NOT_PERFECT_FILE;
         }
         foreach ($file_array as $rows) {
-            $row = trim(str_replace("\r\n", "", $rows));//chuan hoa chuoi
+            $row = trim(str_replace("\r\n", "", $rows));
             if (!$this->is_Perfect_Row($row)) {
                 return self::NOT_PERFECT_FILE;
             }
@@ -26,7 +26,7 @@ class PerfectFile
             return true;
         }
     }
-    private function readFile($Path)
+    private function read_File($Path)
     {
         $file = fopen($Path, "r");
         if (!$file) {
